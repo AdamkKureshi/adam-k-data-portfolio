@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* CSS to display images on one line */
+			.centered-images {
+							display: inline-block;  /* Make images inline-block */
+							margin-left: 10px;      /* Add space between images */
+							margin-right: 10px;     /* Add space between images */
+			}
+
+            /* CSS to make the image appear vertically */
+            .vertical-image {
+                display: block;  /* Make this image a block-level element */
+                margin-top: 20px; /* Optional: adds space above the vertical image */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">AK.DATA.PORTFOLIO</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="generic.html">ABOUT ME</a></li>
+							<li class="active"><a href="elements.html">BACK TO PROJECT PORTFOLIO</a></li>
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>EXCEL, GOOGLE SHEETS, AND SUCH...</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h3>Project Overview</h3>
+									    <p>I still get excited when someone asks me about spreadsheets or using such tools i.e., Excel and Google Sheets for different projects. From number crunching to data visualization, these multi-purpose tools have been my trusted friends in solving the intricacies of project management and data analytics.</p> 
+ 
+                                        <p>In the present day, speed is everything, and it is here that spreadsheets excel. Either it is building complex financial models, monitoring project milestones or working with team members in real-time, Excel and Google Sheets are the best tools that offer unmatched flexibility and functionality. What makes spreadsheets unique is their flexibility to fit a wide variety of needs. Whether you are a data analyst with years of experience or a novice just starting out, the ease of use of Excel and Google Sheets makes them accessible to users at all skill levels. What is more, due to the fact that formulas, macros, and add-ons are at your disposal, the sky is the limit.</p> 
+                                         
+                                        <p>However, it is not just about numbers.  It is also about teamwork. Google Sheets allows for easy sharing and real-time editing between teams that can overcome geographical boundaries and inspire innovation. Therefore, whether you are a business professional, a student, or a budding entrepreneur, welcome onboard as together we unleash the full power of Excel and Google Sheets. Let's convert data into insights, ideas into action, and dreams into reality!</p>
+
+									<h3>The Dataset</h3>
+										<p>Our dataset <a href="data_sets/Stroke_data.csv" target="_blank">[Download the dataset]</a> contains various factors that could influence the occurrence of a stroke. It includes a unique identifier for each record, as well as demographic and health-related attributes such as gender, age, and age group, which classifies individuals into categories like Teen, Adult, and Middle-Aged Adult. Health factors are captured through variables such as hypertension (indicating whether the individual has high blood pressure), heart disease (whether the individual has a history of heart disease), and diabetes category. Other variables include marital status, work type, smoking status, and body mass index (BMI), which is further categorized into ranges like Healthy Range, Overweight, and Obesity. The dataset also records stroke occurrence (whether the individual has had a stroke), as well as glucose levels, which may be linked to diabetes.</p>
+
+										<p>The categorization of age data plays a crucial role in analyzing and imputing missing data. By dividing age into meaningful categories such as Infant, Child, Adolescent, Adult, and Senior, we can gain more insights into the demographic structure of the dataset. The formula utilized assigns individuals to these categories based on their age, ensuring that each record falls into the appropriate group. This is important for a few reasons: it allows us to apply more accurate imputation techniques for missing values, as we can infer missing data based on the trends and patterns within each age group. Moreover, age categories help in identifying relationships between age and other health-related variables such as hypertension, heart disease, and glucose levels, thus enabling more targeted data analysis and decision-making. This approach enhances the quality of the dataset and facilitates better-informed conclusions in further analyses.
+										</p>
+
+										<p>
+											<img src="images/age_cat_formula.png" alt="Descriptive Analysis Image" width="600" height="200" class="vertical-image">
+										</p>
+
+										<p>The distribution of these variables reveals a wide age range, with individuals spanning from teens to elderly adults, suggesting a varied population. Gender representation includes both males and females, and further analysis could explore whether there are gender-based differences in stroke occurrences. Hypertension and heart disease are binary indicators (yes or no), and both might show a direct correlation with stroke occurrences. Stroke is the target variable, and its distribution indicates a minority of individuals have had a stroke. BMI varies across individuals, with some in the healthy range and others categorized as overweight or obese, which could potentially correlate with stroke risk. This dataset provides valuable insight into the factors that may contribute to stroke occurrence and can be used for deeper analysis into the relationship between these health variables and stroke.</p>
+
+										<p>
+											<img src="images/Data_Cat_Pie.png" alt="Pie Chart Image" width="425" height="300" class="centered-images">
+											<img src="images/Data_Cat_Bar.png" alt="Bar Chart Image" width="425"height="300" class="centered-images">
+										</p>
+										
+										<p>The dataset comprises <b>5110 records</b>, with key demographic and health-related attributes. The average age of individuals is <b>43.23 years</b>, with a wide age range from <b>0.08 to 82 years</b>, indicating a diverse sample. The dataset shows a relatively low prevalence of hypertension, <b>with only 9.75%</b> of individuals affected, while <b>5.4%</b> have heart disease. Hypertension and heart disease are binary variables, with most individuals in the dataset being free of these conditions. In terms of body mass, the average BMI is <b>28.89</b>, categorizing the majority of individuals as overweight. The BMI ranges from <b>10.3 to 97.6</b>, suggesting significant variability. Stroke occurrence is recorded for <b>4.87%</b> of individuals, with the majority having no stroke. The average glucose level is <b>106.15</b>, and while glucose values range from <b>55.12 to 271.74</b>, the wide spread indicates notable variability in blood sugar levels, which could be associated with diabetes risk or stroke. Overall, the dataset reflects a mix of healthy and at-risk individuals, providing a valuable basis for analyzing the relationships between hypertension, heart disease, BMI, glucose levels, and stroke occurrence.</p>
+
+										<p>
+											<img src="images/Descriptive_Analysis.png" alt="Descriptive Analysis Image" width="900" height="300" class="vertical-image">
+										</p>
+
+									<h3>Initial Steps</h3>
+										<p>Handling missing values is a crucial step in preparing data for analysis because missing data can skew results, introduce bias, or limit the reliability of insights. The first step is to determine the nature of the missing values to choose an appropriate strategy. Missing data can occur for several reasons: systematic missingness, where data is absent due to design constraints (e.g., certain questions not applicable to specific groups); random missingness, where values are missing by chance, making imputation feasible; or not applicable, where a data field does not apply to certain entries (e.g., BMI for very young individuals). Understanding why data is missing helps to define whether values should be imputed, removed, or left untouched.</p>
+										
+										<p>For instance, in the dataset used here, the bmi column has 201 missing values. One option is to remove rows where bmi is missing. This approach works well if the variable is not central to the analysis or if the missing data constitutes a small proportion of the dataset (e.g., less than 5–10%). In tools like Excel or Google Sheets, you can filter and exclude rows with blank values in the bmi column. However, filtering out rows is not always ideal, especially if the dataset is already small or if the missing values are significant.</p>
+									
+									<h3>What to do with missing data</h3>
+										<p>An alternative is imputation, which involves replacing missing values with estimates. The simplest imputation methods are mean or median imputation, where missing values are filled with the average or median of the column. This works well when the data is normally distributed or has a uniform spread. In spreadsheets like Excel, this can be done using formulas like =AVERAGE(range) or =MEDIAN(range) and applying the result to missing cells. A more tailored approach is category-based imputation, where missing values are replaced with the mean or median of similar groups, such as by Age Group or gender. This accounts for potential variations across categories.</p>
+
+										<!-- <p>For more complex cases, predictive modeling can be used to estimate missing values. This involves building a regression or machine learning model using other features in the dataset (e.g., age, avg_glucose_level, work_type) to predict missing values. This approach is useful if bmi is a critical variable, and there is enough information in other columns to make reliable predictions. In Python, you can train a linear regression model with tools like sklearn to predict and fill missing values, ensuring the imputation aligns closely with existing patterns.</p> -->
+											
+										<p>However, when columns have a very high percentage of missing values (e.g., over 99%), it is often best to drop them entirely, as they provide little value to the analysis. For example, columns like Unnamed: 18, BMI, and Glucose_lvl in this dataset have too many missing values to be useful. In Excel, these can be deleted manually - however, for our dataset we do not need to delete any columns.</p>
+
+										<p>To effectively manage missing data, it is essential to highlight and analyze where and why the gaps exist. Identifying patterns in missing values can offer valuable insights into the data collection process and inform the best approach for addressing them. For instance, missing BMI values might be more prevalent in specific age groups, genders, or other categories. Spotting such trends can guide decisions about whether imputation should consider these factors. Spreadsheet packages make it simple to visualize missing data patterns. In Excel, conditional formatting can be applied using a formula like =ISBLANK(cell) to highlight missing cells, allowing you to quickly assess their distribution. By analyzing these patterns, you can decide if missing data is random, systematic, or potentially linked to an underlying issue.
+
+										<p>Once you've decided on a method to handle missing values, it's important to document the rationale behind your choice. This documentation adds credibility to your analysis and demonstrates your understanding of the dataset. Clearly explain why you selected a particular approach, such as mean imputation for simplicity. To show the impact of your decision, include before-and-after statistics or visualizations that highlight changes in the dataset, such as differences in column averages or distributions. This not only makes your process transparent but also serves as a valuable learning resource for others reviewing your work.</p>
+
+										<p>After making changes to address missing data, it’s crucial to validate the results to ensure they align with your analytical goals. Check that the dataset still retains enough rows and columns to support meaningful analysis and that no key insights have been lost. Additionally, review the imputed values to confirm they are realistic and consistent with the overall data distribution. For example, ensure that imputed BMI values fall within a plausible range for the respective age groups and genders. By systematically highlighting, documenting, and validating missing data handling, you ensure the integrity of your analysis and showcase your meticulous approach to data preparation.</p>
+
+									<h3>Analyze: Extracting Insights from Cleaned Data in Excel/Google Sheets</h3>
+										<p>nce the data is cleaned and transformed, the analysis phase is where you begin to uncover meaningful insights. Using Excel or Google Sheets, you can start with descriptive analysis, which involves calculating summary statistics such as averages, medians, and percentages. For instance, you can create pivot tables to count stroke occurrences across different Age Groups, BMI Categories, or smoking_status. To make the data more interpretable, leverage visualizations like bar charts to compare stroke occurrences by age or gender, and pie charts to illustrate the proportion of smokers versus non-smokers among individuals who had strokes. These visuals can quickly communicate trends and distributions to an audience.</p>
+
+										<p>Beyond descriptive analysis, dive deeper into the dataset to uncover exploratory insights. For example, check whether higher BMI categories or older age groups correlate with increased stroke risk. Use scatter plots in Excel/Google Sheets to visualize relationships between numeric variables, such as avg_glucose_level and age, and their association with stroke. For more structured analysis, calculate correlations between numeric columns (e.g., age, bmi, avg_glucose_level) to assess their strength of association with stroke outcomes. In Google Sheets, you can use the =CORREL(array1, array2) formula to calculate these relationships directly, identifying key variables that might serve as predictors of stroke risk.</p>
+									
+									<h3>Share: Presenting Your Findings Effectively in Excel/Google Sheets</h3>
+										<p>After analyzing the data, focus on presenting your findings in a visually appealing and portfolio-friendly manner. Google Sheets and Excel offer numerous options for creating polished charts and dashboards. Start by building interactive dashboards that allow viewers to explore the data dynamically. For example, use slicers or filters in pivot tables to let stakeholders focus on specific groups (e.g., males versus females or different age brackets). Incorporate visuals such as heatmaps that highlight stroke percentages across Age Groups and BMI Categories, or bar charts comparing stroke risk by work_type. Google Sheets' built-in charting tools are sufficient for creating clean visuals, but you can also link the data to Google Data Studio for more interactive dashboards.</p>
+										
+										<p>In addition to charts, focus on data storytelling by formatting your spreadsheets for clarity and impact. Use clear labels, descriptive titles, and concise annotations to explain key visuals. For instance, under a chart showing stroke risk by age group, add a note: “Stroke risk increases sharply after age 60, especially among individuals with hypertension.” Employ conditional formatting to highlight critical insights, such as cells where glucose levels exceed a risk threshold. The goal is to create a seamless narrative from the raw data to actionable insights, making it easy for others to understand the results without extensive explanations.</p>
+
+									<!-- <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>.</p><hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6> -->
+                                    <hr/>
+									<header>
+									<h3>LOOK UP, DOWN, AND UP AGAIN - V-LOOK UP </h3>							
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>					
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<header>
+										<h3>Heading with a Subtitle</h3>
+										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<header>
+										<h4>Heading with a Subtitle</h4>
+										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+
+									<hr />
+
+								<!-- Lists -->
+									<!-- <h2>Lists</h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
+
+											<h3>Unordered</h3>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis lorem eleifend.</li>
+												<li>Felis feugiat dolore viverra.</li>
+												<li>Dolor pulvinar etiam.</li>
+											</ul>
+
+											<h3>Alternate</h3>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam etiam.</li>
+												<li>Sagittis adipiscing eleifend.</li>
+												<li>Felis enim dolore viverra.</li>
+												<li>Dolor pulvinar etiam etiam.</li>
+											</ul> -->
+
+										<!-- </div>
+										<div class="col-6 col-12-small">
+
+											<h3>Ordered</h3>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis at viverra.</li>
+												<li>Felis enim feugiat magna.</li>
+												<li>Etiam vel felis nullam.</li>
+												<li>Felis enim et tempus.</li>
+											</ol> -->
+
+											<!-- <h3>LINKS</h3>
+											<ul class="icons"> -->
+												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+												<!-- <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+											<!-- </ul> -->
+											<!-- <ul class="icons alt">
+												<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+											</ul> -->
+
+										<!-- </div>
+									</div>
+									<h3>Definition</h3>
+									<dl>
+										<dt>Item 1</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 2</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 3</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+									</dl>
+
+									<h3>Actions</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions small">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<hr /> -->
+
+								Blockquote
+									<h2>Blockquote</h2>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+
+								<!-- Table -->
+									<!-- <h2>Table</h2>
+
+									<h3>Default</h3>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item 1</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 2</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 3</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 4</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 5</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div> -->
+
+									<!-- <h3>Alternate</h3>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item 1</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 2</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 3</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 4</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 5</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<hr /> -->
+
+								<!-- Buttons -->
+									<!-- <h2>Buttons</h2>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions fit">
+										<li><a href="#" class="button primary fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+									</ul>
+									<ul class="actions fit small">
+										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Primary</span></li>
+										<li><span class="button disabled">Default</span></li>
+									</ul>
+
+									<hr /> -->
+
+								<!-- Form -->
+									<!-- <h2>Form</h2>
+
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<!-- Break -->
+											<!-- <div class="col-12">
+												<select name="demo-category" id="demo-category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div> -->
+											<!-- Break -->
+											<!-- <div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div> -->
+											<!-- Break -->
+											<!-- <div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">I am a human</label>
+											</div> -->
+											<!-- Break -->
+											<!-- <div class="col-12">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea> -->
+											</div>
+											<!-- Break -->
+											<!-- <div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form> -->
+
+									<!-- <hr />  -->
+
+								<!-- Image -->
+									<!-- <h2>Image</h2>
+
+									<h3>Fit</h3>
+									<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div> -->
+											<!-- Break -->
+											<!-- <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div> -->
+											<!-- Break -->
+											<!-- <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										</div>
+									</div> -->
+
+									<!-- <h3>Left &amp; Right</h3>
+									<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+									<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+
+									<hr /> -->
+
+								<!-- Box -->
+									<!-- <h2>Box</h2>
+									<div class="box">
+										<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor.</p>
+									</div>
+
+									<hr /> -->
+
+								<!-- Preformatted Code
+									<h2>Preformatted</h2>
+									<pre><code>i = 0; -->
+
+<!-- while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+} -->
+
+<!-- print 'It took ' + i + ' iterations to sort the deck.'; -->
+</code></pre>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer> -->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; adam-kureshi</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
